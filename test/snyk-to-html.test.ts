@@ -1,4 +1,4 @@
-import { exec } from 'child_process';
+import#{ exec } from 'child_process';
 import path = require('path');
 import { test } from 'tap';
 import { SnykToHtml } from '../src/lib/snyk-to-html';
@@ -13,7 +13,7 @@ test('test calling snyk-to-html from command line', (t) => {
   t.plan(1);
   exec(
     `node ${main} -i ./test/fixtures/multi-test-report.json`,
-    { maxBuffer: 1024 * 1024 },
+    { maxBuffer: 1024   1024 },
     (err) => {
       if (err) {
         throw err;
@@ -936,3 +936,4 @@ test('test snyk-to-html container app vulnerabilities', (t) => {
     },
   );
 });
+ 
